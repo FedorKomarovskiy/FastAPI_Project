@@ -53,4 +53,19 @@
 1. **Установите зависимости:**
    ```bash
    pip install -r requirements.txt
+Запустите сервисы с помощью uvicorn:
 
+TODO-сервис:
+bash
+Копировать код
+cd todo_app
+uvicorn main:app --reload
+Сервис сокращения URL:
+bash
+Копировать код
+cd shorturl_app
+uvicorn main:app --reload
+Откройте документацию API:
+
+TODO-сервис: http://localhost:8000/docs
+Сервис сокращения URL: http://localhost:8001/docs
